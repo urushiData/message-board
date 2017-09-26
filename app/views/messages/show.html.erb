@@ -1,0 +1,7 @@
+<h1>id: <%= @message.id %> Message Details</h1>
+
+<p><%= @message.content %></p>
+
+<%= link_to 'Back to index', messages_path %>
+<%= link_to 'Edit this message', edit_message_path %>
+<%= link_to 'Delete this message', @message , method: :delete, data: {confirm: 'Confirmed?' } %>
